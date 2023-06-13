@@ -10,6 +10,7 @@ import logging
 
 load_dotenv()
 BOT_TOKEN = os.environ.get("BOT_TOKEN")
+print(BOT_TOKEN)
 updater = Updater(BOT_TOKEN)
 # Set up logging
 logging.basicConfig(filename='bot.log',
