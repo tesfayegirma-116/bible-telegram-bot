@@ -39,6 +39,41 @@ If you want to modify or contribute to the BibleBot code, you will need to follo
 4. Replace the `BOT_TOKEN` variable in the `biblebot.py` file with your own API token.
 5. Run the `biblebot.py` file to start the bot.
 
+
+
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/tesfayegirma-116/bible-telegram-bot.git
+```
+
+Go to the project directory
+
+```bash
+  cd bible-telegram-bot
+```
+
+Run docker
+
+```bash
+  docker build -t bible_bot .
+```
+
+Start the bot
+
+```bash
+  docker run bible_bot
+```
+
+
+## Authors
+
+- [@tesfayegirma](https://github.com/tesfayegirma-116)
+
