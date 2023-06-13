@@ -8,6 +8,8 @@ WORKDIR /app
 COPY bible_bot.py /app/
 COPY requirements.txt /app/
 
+COPY .env.example /app/.env
+
 # Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
