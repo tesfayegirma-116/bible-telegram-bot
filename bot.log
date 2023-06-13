@@ -1,0 +1,5 @@
+2023-06-13 18:38:17,123 - apscheduler.scheduler - INFO - Scheduler started
+2023-06-13 18:38:23,374 - __main__ - INFO - User 1186798589 started the bot. Name: ሆፕ🇪🇹. Username: Tesfa_h.
+2023-06-13 18:38:46,929 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2023-06-13 18:38:46,929 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2023-06-13 18:38:47,298 - telegram.ext.updater - WARNING - Exiting immediately!

@@ -5,10 +5,16 @@ from telegram import Update, KeyboardButton, ReplyKeyboardMarkup
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
 from typing import List
 from dotenv import load_dotenv
+import logging
+
 
 load_dotenv()
 BOT_TOKEN = os.environ.get("BOT_TOKEN")
 updater = Updater(BOT_TOKEN)
+# Set up logging
+logging.basicConfig(filename='bot.log',
+                    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 
 class BibleBot:
@@ -23,6 +29,9 @@ class BibleBot:
         return [[KeyboardButton(text="⬅️ Back")]]
 
     def start(self, update: Update, context: CallbackContext):
+        user = update.message.from_user
+        logger.info(
+            f"User {user.id} started the bot. Name: {user.first_name}. Username: {user.username}.")
         welcome_message = "In the beginning was the Word, and the Word was with God, and the Word was God. (John 1:1)"
         update.message.reply_text(welcome_message)
         self.send_translation_selection(update, context)
