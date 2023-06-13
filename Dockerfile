@@ -7,7 +7,6 @@ WORKDIR /app
 # Copy required files
 COPY bible_bot.py /app/
 COPY requirements.txt /app/
-COPY .env /app/  
 
 # Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
