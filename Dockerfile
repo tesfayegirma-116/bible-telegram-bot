@@ -8,6 +8,8 @@ WORKDIR /app
 COPY bible_bot.py /app/
 COPY requirements.txt /app/
 
+COPY run_bible_bot.sh /app/
+
 # Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
