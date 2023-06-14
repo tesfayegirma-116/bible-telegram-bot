@@ -6,6 +6,8 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, Callb
 from typing import List
 from dotenv import load_dotenv
 import logging
+import random
+import datetime
 
 
 load_dotenv()
@@ -156,6 +158,7 @@ class BibleBot:
 
 def main():
     bible_bot = BibleBot()
+
     start_handler = CommandHandler('start', bible_bot.start)
     updater.dispatcher.add_handler(start_handler)
 

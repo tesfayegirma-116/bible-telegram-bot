@@ -187,3 +187,31 @@ telegram.error.Conflict: Conflict: terminated by other getUpdates request; make 
 2023-06-14 09:42:57,491 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
 2023-06-14 09:42:57,491 - apscheduler.scheduler - INFO - Scheduler has been shut down
 2023-06-14 09:42:58,099 - telegram.ext.updater - WARNING - Exiting immediately!
+2023-06-14 10:08:10,075 - apscheduler.scheduler - INFO - Scheduler started
+2023-06-14 10:09:04,828 - __main__ - INFO - User 1186798589 started the bot. Name: ሆፕ🇪🇹. Username: Tesfa_h.
+2023-06-14 10:17:56,308 - __main__ - INFO - User 1186798589 started the bot. Name: ሆፕ🇪🇹. Username: Tesfa_h.
+2023-06-14 10:23:46,643 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2023-06-14 10:23:46,644 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2023-06-14 10:23:46,935 - telegram.ext.updater - WARNING - Exiting immediately!
+2023-06-14 10:24:22,862 - apscheduler.scheduler - INFO - Scheduler started
+2023-06-14 10:24:32,848 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/ext/dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/ext/handler.py", line 199, in handle_update
+    return self.callback(update, context)
+TypeError: BibleBot.fetch_daily_verse() takes 1 positional argument but 3 were given
+2023-06-14 10:25:02,288 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2023-06-14 10:25:02,288 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2023-06-14 10:25:02,537 - telegram.ext.updater - WARNING - Exiting immediately!
+2023-06-14 10:25:04,019 - apscheduler.scheduler - INFO - Scheduler started
+2023-06-14 10:25:06,952 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/ext/dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/ext/handler.py", line 199, in handle_update
+    return self.callback(update, context)
+TypeError: BibleBot.fetch_daily_verse() takes 1 positional argument but 3 were given
+2023-06-14 10:28:58,454 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2023-06-14 10:28:58,454 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2023-06-14 10:28:58,814 - telegram.ext.updater - WARNING - Exiting immediately!
