@@ -3,3 +3,187 @@
 2023-06-13 18:38:46,929 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
 2023-06-13 18:38:46,929 - apscheduler.scheduler - INFO - Scheduler has been shut down
 2023-06-13 18:38:47,298 - telegram.ext.updater - WARNING - Exiting immediately!
+2023-06-14 09:41:47,026 - apscheduler.scheduler - INFO - Scheduler started
+2023-06-14 09:41:52,476 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2023-06-14 09:41:52,476 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/ext/updater.py", line 651, in _network_loop_retry
+    if not action_cb():
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/ext/updater.py", line 602, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/ext/extbot.py", line 226, in get_updates
+    updates = super().get_updates(
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/bot.py", line 133, in decorator
+    result = func(*args, **kwargs)
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/bot.py", line 3057, in get_updates
+    self._post(
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/bot.py", line 298, in _post
+    return self.request.post(
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/utils/request.py", line 361, in post
+    result = self._request_wrapper(
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/utils/request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2023-06-14 09:41:58,310 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2023-06-14 09:41:58,310 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/ext/updater.py", line 651, in _network_loop_retry
+    if not action_cb():
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/ext/updater.py", line 602, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/ext/extbot.py", line 226, in get_updates
+    updates = super().get_updates(
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/bot.py", line 133, in decorator
+    result = func(*args, **kwargs)
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/bot.py", line 3057, in get_updates
+    self._post(
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/bot.py", line 298, in _post
+    return self.request.post(
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/utils/request.py", line 361, in post
+    result = self._request_wrapper(
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/utils/request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2023-06-14 09:42:04,158 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2023-06-14 09:42:04,158 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/ext/updater.py", line 651, in _network_loop_retry
+    if not action_cb():
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/ext/updater.py", line 602, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/ext/extbot.py", line 226, in get_updates
+    updates = super().get_updates(
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/bot.py", line 133, in decorator
+    result = func(*args, **kwargs)
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/bot.py", line 3057, in get_updates
+    self._post(
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/bot.py", line 298, in _post
+    return self.request.post(
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/utils/request.py", line 361, in post
+    result = self._request_wrapper(
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/utils/request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2023-06-14 09:42:09,515 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2023-06-14 09:42:09,515 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/ext/updater.py", line 651, in _network_loop_retry
+    if not action_cb():
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/ext/updater.py", line 602, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/ext/extbot.py", line 226, in get_updates
+    updates = super().get_updates(
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/bot.py", line 133, in decorator
+    result = func(*args, **kwargs)
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/bot.py", line 3057, in get_updates
+    self._post(
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/bot.py", line 298, in _post
+    return self.request.post(
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/utils/request.py", line 361, in post
+    result = self._request_wrapper(
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/utils/request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2023-06-14 09:42:15,353 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2023-06-14 09:42:15,353 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/ext/updater.py", line 651, in _network_loop_retry
+    if not action_cb():
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/ext/updater.py", line 602, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/ext/extbot.py", line 226, in get_updates
+    updates = super().get_updates(
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/bot.py", line 133, in decorator
+    result = func(*args, **kwargs)
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/bot.py", line 3057, in get_updates
+    self._post(
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/bot.py", line 298, in _post
+    return self.request.post(
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/utils/request.py", line 361, in post
+    result = self._request_wrapper(
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/utils/request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2023-06-14 09:42:22,455 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2023-06-14 09:42:22,455 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/ext/updater.py", line 651, in _network_loop_retry
+    if not action_cb():
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/ext/updater.py", line 602, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/ext/extbot.py", line 226, in get_updates
+    updates = super().get_updates(
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/bot.py", line 133, in decorator
+    result = func(*args, **kwargs)
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/bot.py", line 3057, in get_updates
+    self._post(
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/bot.py", line 298, in _post
+    return self.request.post(
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/utils/request.py", line 361, in post
+    result = self._request_wrapper(
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/utils/request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2023-06-14 09:42:31,446 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2023-06-14 09:42:31,446 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/ext/updater.py", line 651, in _network_loop_retry
+    if not action_cb():
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/ext/updater.py", line 602, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/ext/extbot.py", line 226, in get_updates
+    updates = super().get_updates(
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/bot.py", line 133, in decorator
+    result = func(*args, **kwargs)
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/bot.py", line 3057, in get_updates
+    self._post(
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/bot.py", line 298, in _post
+    return self.request.post(
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/utils/request.py", line 361, in post
+    result = self._request_wrapper(
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/utils/request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2023-06-14 09:42:40,221 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2023-06-14 09:42:40,221 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/ext/updater.py", line 651, in _network_loop_retry
+    if not action_cb():
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/ext/updater.py", line 602, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/ext/extbot.py", line 226, in get_updates
+    updates = super().get_updates(
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/bot.py", line 133, in decorator
+    result = func(*args, **kwargs)
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/bot.py", line 3057, in get_updates
+    self._post(
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/bot.py", line 298, in _post
+    return self.request.post(
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/utils/request.py", line 361, in post
+    result = self._request_wrapper(
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/utils/request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2023-06-14 09:42:52,161 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2023-06-14 09:42:52,161 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/ext/updater.py", line 651, in _network_loop_retry
+    if not action_cb():
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/ext/updater.py", line 602, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/ext/extbot.py", line 226, in get_updates
+    updates = super().get_updates(
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/bot.py", line 133, in decorator
+    result = func(*args, **kwargs)
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/bot.py", line 3057, in get_updates
+    self._post(
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/bot.py", line 298, in _post
+    return self.request.post(
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/utils/request.py", line 361, in post
+    result = self._request_wrapper(
+  File "/home/hope/Documents/Projects/python_project/bible-telegram-bot/venv/lib/python3.10/site-packages/telegram/utils/request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2023-06-14 09:42:57,491 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2023-06-14 09:42:57,491 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2023-06-14 09:42:58,099 - telegram.ext.updater - WARNING - Exiting immediately!

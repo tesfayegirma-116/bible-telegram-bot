@@ -119,6 +119,8 @@ class BibleBot:
             update.message.reply_text(
                 chapter_content[i:i + max_message_length])
 
+        self.send_chapters(update, context)
+
     def strip_html_tags(self, text):
         clean = re.compile('<.*?>')
         return re.sub(clean, '', text)
@@ -148,6 +150,8 @@ class BibleBot:
         elif chat_state == "book":
             self.send_translation_selection(update, context)
             context.user_data["chat_state"] = "translation"
+        else:
+            self.select_chapter(update, context)
 
 
 def main():
